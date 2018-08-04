@@ -1,0 +1,14 @@
+Raspberry Pi -> MQTT Broker -> MongoDB (test.py)
+[
+	{"time": "2018-08-04 13:05:51", "distance": "0.228467802183", "mac": "40:4e:36:58:18:d8", "id": "...", "major": "14387", "minor": "13107", "power": "51", "rssi": "-44", "uid": "404e"}, 
+	{"time": "2018-08-04 13:05:51", "distance": "1.2343371335", "mac": "2a:21:ba:1d:a9:04", "id": "...", "major": "32074", "minor": "53533", "power": "94", "rssi": "-96", "uid": "2a21"}
+]
+
+Custom Client -> MQTT Broker -> test.py
+["404e"] 
+(BLE 밴드 UID)
+
+test.py -> MQTT Broker -> Custom Client
+
+[{"distance": "0.286037765539", "_id": "RASP13"}]
+(해당 BLE 밴드의 UID에 해당하는 모든 라즈베리파이 거리 데이터)
